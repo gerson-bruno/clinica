@@ -45,6 +45,7 @@ export interface Transacao {
 
 export interface Agendamento {
     id: string;
+    data: string;
     hora: string;
     paciente: string;
     tipo: string;
@@ -87,7 +88,7 @@ const initialTransacoes: Transacao[] = [
 ];
 
 const initialAgendamentos: Agendamento[] = [
-    { id: '1', hora: '09:00', paciente: 'Ana Silva', tipo: 'Avaliação Inicial', status: 'Confirmado' },
+    { id: '1', data: new Date().toISOString().split('T')[0], hora: '09:00', paciente: 'Ana Silva', tipo: 'Avaliação Inicial', status: 'Confirmado' },
 ];
 
 export function DataProvider({ children }: { children: ReactNode }) {
