@@ -88,7 +88,7 @@ const initialTransacoes: Transacao[] = [
 ];
 
 const initialAgendamentos: Agendamento[] = [
-    { id: '1', data: new Date().toISOString().split('T')[0], hora: '09:00', paciente: 'Ana Silva', tipo: 'Avaliação Inicial', status: 'Confirmado' },
+    { id: '1', data: new Date().toLocaleDateString('sv-SE'), hora: '09:00', paciente: 'Ana Silva', tipo: 'Avaliação Inicial', status: 'Confirmado' },
 ];
 
 export function DataProvider({ children }: { children: ReactNode }) {
@@ -111,6 +111,14 @@ export function DataProvider({ children }: { children: ReactNode }) {
         const saved = localStorage.getItem('fisio_agendamentos');
         return saved ? JSON.parse(saved) : initialAgendamentos;
     });
+
+    // Garantir que o agendamento da Ana (ID 1) sempre esteja na data de hoje
+    useEffect(() => {
+        const hoje = new Date().toLocaleDateString('sv-SE');
+        setAgendamentos(prev => prev.map(a =>
+            a.id === '1' && a.data !== hoje ? { ...a, data: hoje } : a
+        ));
+    }, []);
 
     // Salvar no LocalStorage sempre que alterar
     useEffect(() => { localStorage.setItem('fisio_pacientes', JSON.stringify(pacientes)); }, [pacientes]);
