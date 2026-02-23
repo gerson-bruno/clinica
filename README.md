@@ -1,73 +1,115 @@
-# React + TypeScript + Vite
+# 🏥 ReabilitaSys
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistema web completo para gestão de clínicas de fisioterapia.  
+Permite controle financeiro, agendamento de pacientes, prontuários, evoluções, alta e gerenciamento de pacientes ativos e inativos.
 
-Currently, two official plugins are available:
+🔗 Acesse o projeto online: [Clique aqui](https://gerson-bruno.github.io/ReabilitaSys/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📸 Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Preview do sistema](public/preview.png)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🔐 Acesso ao Sistema
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Usuário padrão:
+```
+admin
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Senha:
 ```
+123
+```
+
+Ou crie um novo usuário diretamente na tela de login.
+
+---
+
+## ✨ Funcionalidades
+
+- 🌙 Modo claro e escuro
+- 👤 Edição de foto e dados do profissional
+- 📅 Agendamento de pacientes
+- 📋 Controle de prontuário (consulta, evolução e alta)
+- 💰 Controle financeiro da clínica
+- 📊 Gestão de pacientes ativos e inativos
+- 🔐 Sistema de autenticação
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+- ⚛️ React 19
+- 🔷 TypeScript
+- ⚡ Vite
+- 🧭 React Router DOM
+- 🎨 Lucide React (ícones)
+- 📏 ESLint
+
+---
+
+## 🚀 Rodando o projeto localmente
+
+### 1️⃣ Clone o repositório
+```bash
+git clone https://github.com/gerson-bruno/ReabilitaSys.git
+```
+
+### 2️⃣ Acesse a pasta do projeto
+```bash
+cd ReabilitaSys
+```
+
+### 3️⃣ Instale as dependências
+```bash
+npm install
+```
+
+### 4️⃣ Execute em ambiente de desenvolvimento
+```bash
+npm run dev
+```
+
+O projeto estará disponível em:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🏗️ Build para produção
+
+Gerar versão otimizada:
+
+```bash
+npm run build
+```
+
+Visualizar build localmente:
+
+```bash
+npm run preview
+```
+
+---
+
+## 📁 Estrutura do Projeto
+
+Projeto desenvolvido com arquitetura moderna baseada em componentes, utilizando React + TypeScript, com organização modular e foco em escalabilidade.
+
+---
+
+## 📌 Objetivo do Projeto
+
+O ReabilitaSys foi desenvolvido como um sistema completo de gestão para clínicas, simulando um cenário real de uso profissional, com foco em organização, produtividade e experiência do usuário.
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Gerson Bruno**
