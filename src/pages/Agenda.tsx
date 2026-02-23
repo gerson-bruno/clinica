@@ -337,11 +337,11 @@ export function Agenda() {
                                         <div style={{
                                             width: '100%', padding: '1rem', borderRadius: 'var(--radius-md)',
                                             display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-                                            backgroundColor: agendamento.status === 'Confirmado' ? '#e0f2f1' : agendamento.status === 'Pendente' ? '#fff3e0' : '#ffebee',
+                                            backgroundColor: agendamento.status === 'Confirmado' ? 'var(--color-status-confirmed-bg)' : agendamento.status === 'Pendente' ? 'var(--color-status-pending-bg)' : 'var(--color-status-cancelled-bg)',
                                             borderLeft: `4px solid ${agendamento.status === 'Confirmado' ? 'var(--color-primary)' : agendamento.status === 'Pendente' ? 'var(--color-warning)' : 'var(--color-danger)'}`
                                         }}>
                                             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                                                <div style={{ width: '40px', height: '40px', borderRadius: 'var(--radius-full)', backgroundColor: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-text-secondary)' }}>
+                                                <div style={{ width: '40px', height: '40px', borderRadius: 'var(--radius-full)', backgroundColor: 'var(--color-status-element-bg)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-text-secondary)' }}>
                                                     <User size={20} />
                                                 </div>
                                                 <div>
@@ -352,16 +352,16 @@ export function Agenda() {
                                             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                                                 <span style={{
                                                     fontSize: '0.75rem', fontWeight: '600', padding: '0.25rem 0.75rem', borderRadius: 'var(--radius-full)',
-                                                    backgroundColor: 'white',
+                                                    backgroundColor: 'var(--color-status-element-bg)',
                                                     color: agendamento.status === 'Confirmado' ? 'var(--color-primary)' : agendamento.status === 'Pendente' ? 'var(--color-warning)' : 'var(--color-danger)'
                                                 }}>
                                                     {agendamento.status}
                                                 </span>
                                                 <div style={{ display: 'flex', gap: '0.25rem' }}>
-                                                    <button onClick={() => handleOpenModal(agendamento)} style={{ padding: '0.25rem', backgroundColor: 'white', borderRadius: 'var(--radius-sm)', color: 'var(--color-text-secondary)', cursor: 'pointer', border: 'none' }} title="Editar">
+                                                    <button onClick={() => handleOpenModal(agendamento)} style={{ padding: '0.25rem', backgroundColor: 'var(--color-status-element-bg)', borderRadius: 'var(--radius-sm)', color: 'var(--color-text-secondary)', cursor: 'pointer', border: 'none' }} title="Editar">
                                                         <Edit2 size={16} />
                                                     </button>
-                                                    <button onClick={() => handleDelete(agendamento.id)} style={{ padding: '0.25rem', backgroundColor: 'white', borderRadius: 'var(--radius-sm)', color: 'var(--color-danger)', cursor: 'pointer', border: 'none' }} title="Excluir">
+                                                    <button onClick={() => handleDelete(agendamento.id)} style={{ padding: '0.25rem', backgroundColor: 'var(--color-status-element-bg)', borderRadius: 'var(--radius-sm)', color: 'var(--color-danger)', cursor: 'pointer', border: 'none' }} title="Excluir">
                                                         <Trash2 size={16} />
                                                     </button>
                                                 </div>

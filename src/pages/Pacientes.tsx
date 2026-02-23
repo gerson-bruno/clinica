@@ -110,7 +110,7 @@ export function Pacientes() {
                                     <td style={{ padding: '1rem 1.5rem' }}>
                                         <span style={{
                                             fontSize: '0.75rem', fontWeight: '600', padding: '0.25rem 0.75rem', borderRadius: 'var(--radius-full)',
-                                            backgroundColor: paciente.status === 'Ativo' ? '#e8f5e9' : '#f5f5f5',
+                                            backgroundColor: paciente.status === 'Ativo' ? 'var(--color-status-confirmed-bg)' : 'var(--color-surface-hover)',
                                             color: paciente.status === 'Ativo' ? 'var(--color-success)' : 'var(--color-text-secondary)'
                                         }}>
                                             {paciente.status}

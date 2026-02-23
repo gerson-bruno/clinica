@@ -58,7 +58,7 @@ export function Login() {
                 </div>
 
                 {error && (
-                    <div style={{ padding: '0.75rem', borderRadius: 'var(--radius-md)', backgroundColor: error.includes('Cadastro') ? '#e8f5e9' : '#ffebee', color: error.includes('Cadastro') ? 'var(--color-success)' : 'var(--color-danger)', fontSize: '0.875rem', marginBottom: '1.5rem', textAlign: 'center' }}>
+                    <div style={{ padding: '0.75rem', borderRadius: 'var(--radius-md)', backgroundColor: error.includes('Cadastro') ? 'var(--color-success-bg)' : 'var(--color-error-bg)', color: error.includes('Cadastro') ? 'var(--color-success)' : 'var(--color-danger)', fontSize: '0.875rem', marginBottom: '1.5rem', textAlign: 'center' }}>
                         {error}
                     </div>
                 )}

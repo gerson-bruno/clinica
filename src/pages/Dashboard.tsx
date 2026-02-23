@@ -114,7 +114,7 @@ export function Dashboard() {
                                 </div>
                                 <span style={{
                                     fontSize: '0.75rem', fontWeight: '600', padding: '0.25rem 0.75rem', borderRadius: 'var(--radius-full)',
-                                    backgroundColor: appt.status === 'Confirmado' ? '#e8f5e9' : appt.status === 'Pendente' ? '#fff3e0' : '#ffebee',
+                                    backgroundColor: appt.status === 'Confirmado' ? 'var(--color-status-confirmed-bg)' : appt.status === 'Pendente' ? 'var(--color-status-pending-bg)' : 'var(--color-status-cancelled-bg)',
                                     color: appt.status === 'Confirmado' ? 'var(--color-success)' : appt.status === 'Pendente' ? 'var(--color-warning)' : 'var(--color-danger)'
                                 }}>
                                     {appt.status}
