@@ -216,7 +216,7 @@ export function ProntuarioDetalhes() {
                         <div style={{ padding: '1.5rem', border: '1px solid var(--color-border)', borderRadius: 'var(--radius-md)', backgroundColor: 'var(--color-surface)', marginBottom: '1.5rem' }}>
                             <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px dashed var(--color-border)', paddingBottom: '1rem', marginBottom: '1rem' }}>
                                 <div>
-                                    <h3 style={{ fontSize: '1.25rem', fontWeight: '700', color: 'var(--color-text-primary)' }}>Clínica FisioGest</h3>
+                                    <h3 style={{ fontSize: '1.25rem', fontWeight: '700', color: 'var(--color-text-primary)' }}>ReabilitaSys</h3>
                                     <p style={{ fontSize: '0.875rem', color: 'var(--color-text-secondary)' }}>Relatório Fisioterapêutico</p>
                                 </div>
                                 <div style={{ textAlign: 'right' }}>

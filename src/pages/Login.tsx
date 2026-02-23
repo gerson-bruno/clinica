@@ -53,7 +53,7 @@ export function Login() {
                     <div style={{ width: '48px', height: '48px', borderRadius: 'var(--radius-md)', backgroundColor: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', color: 'white' }}>
                         <Activity size={24} />
                     </div>
-                    <h1 style={{ fontSize: '1.5rem', fontWeight: '700', color: 'var(--color-text-primary)' }}>Clínica FisioGest</h1>
+                    <h1 style={{ fontSize: '1.5rem', fontWeight: '700', color: 'var(--color-text-primary)' }}>ReabilitaSys</h1>
                     <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.875rem' }}>{isRegistering ? 'Crie sua conta' : 'Acesse seu painel'}</p>
                 </div>
 

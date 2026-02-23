@@ -34,7 +34,7 @@ export function Sidebar() {
                 }}>
                     <Activity color="var(--color-primary)" size={24} />
                 </div>
-                <h2 style={{ color: 'white', margin: 0, fontSize: '1.25rem', fontWeight: 'bold' }}>FisioGest</h2>
+                <h2 style={{ color: 'white', margin: 0, fontSize: '1.25rem', fontWeight: 'bold' }}>ReabilitaSys</h2>
             </div>
 
             <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
@@ -79,7 +79,7 @@ export function Sidebar() {
             <div style={{ marginTop: 'auto', padding: '1rem', backgroundColor: 'var(--color-primary-dark)', borderRadius: 'var(--radius-md)', fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.85)', textAlign: 'center', lineHeight: '1.4' }}>
                 <p>Desenvolvido por:</p>
                 <p style={{ fontWeight: '600' }}>Gerson Bruno</p>
-                <p style={{ marginTop: '0.25rem', opacity: 0.8 }}>v2.0</p>
+                <p style={{ marginTop: '0.25rem', opacity: 0.8 }}>v3.0</p>
             </div>
         </aside>
     );
