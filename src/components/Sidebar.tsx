@@ -79,7 +79,7 @@ export function Sidebar() {
             <div style={{ marginTop: 'auto', padding: '1rem', backgroundColor: 'var(--color-primary-dark)', borderRadius: 'var(--radius-md)', fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.85)', textAlign: 'center', lineHeight: '1.4' }}>
                 <p>Desenvolvido por:</p>
                 <p style={{ fontWeight: '600' }}>Gerson Bruno</p>
-                <p style={{ marginTop: '0.25rem', opacity: 0.8 }}>v1.01</p>
+                <p style={{ marginTop: '0.25rem', opacity: 0.8 }}>v2.0</p>
             </div>
         </aside>
     );
